@@ -1,6 +1,6 @@
-/* Corpo da página */
+/* -------------------- Corpo da página -------------------- */
 body {
-    background: #121212; /* cinza escuro mais elegante */
+    background: #121212; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
 }
 
-/* Título do site */
+/* -------------------- Título do site -------------------- */
 .tituloSite {
     text-align: center;
     color: #ff3b3b;
@@ -38,7 +38,7 @@ body {
     transform: translateY(-10px);
 }
 
-/* Formulário de login */
+/* -------------------- Formulário de login -------------------- */
 .loginForm {
     margin: 50px auto;
     padding: 35px 30px;
@@ -107,8 +107,38 @@ body {
 /* Select de gênero estilizado */
 .loginForm select {
     cursor: pointer;
-    appearance: none; /* remove estilo padrão */
+    appearance: none;
     background: #2c2c2c url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'><path fill='white' d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
     background-size: 14px;
     padding-right: 35px;
+}
+
+/* -------------------- Responsividade para celular -------------------- */
+@media (max-width: 480px) {
+    .tituloSite {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+
+    .tituloSite p {
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+
+    .loginForm {
+        width: 90%;
+        padding: 25px 20px;
+        margin: 30px auto;
+    }
+
+    .loginForm input,
+    .loginForm select {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+
+    .loginForm .btnEntrar {
+        padding: 12px;
+        font-size: 1rem;
+    }
 }
