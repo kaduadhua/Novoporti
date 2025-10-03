@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Kauan</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="maintitle">Kauan - Back-end Developer</h1>
+        <p>Olá! Tudo bem? Aqui compartilho alguns dos meus trabalhos e projetos. Espero que goste!</p>
+    </header>
+
+    <nav class="links">
+        <a href="project.html" class="btn-link">Projetos</a>
+        <a href="https://www.instagram.com/let_name_ka0on/" target="_blank" class="btn-link">Contato</a>
+        <button type="button" class="btnSair" onclick="sair()">Sair</button>
+    </nav>
+
+    <section class="aboutme">
+        <h2>Sobre Mim</h2>
+        <p>
+            Olá! <strong>Meu nome é Kauan</strong> e estou iniciando minha jornada como <strong>desenvolvedor
+                back-end</strong>.
+            Tenho me dedicado a aprender conceitos fundamentais de programação, banco de dados e APIs, sempre buscando
+            colocar
+            em prática o que estudo.
+        </p>
+        <p>
+            Meu objetivo é evoluir constantemente, ganhar experiência com projetos reais e me tornar capaz de criar
+            sistemas bem estruturados e eficientes. Este portfólio reúne alguns dos meus primeiros projetos e representa
+            o início da minha caminhada no mundo da tecnologia.
+        </p>
+    </section>
+
+    <section class="skills">
+        <h2>Minhas Habilidades</h2>
+        <button class="skill-btn" onclick="mostrarDiv()">
+            <img src="img/Java.jpg" alt="Java" width="60" height="60">
+            Java
+        </button>
+
+        <div id="aboutJava" class="about-skill" style="display: none;">
+            <h3>O que é Java?</h3>
+            <p>
+                Java é uma linguagem de programação de alto nível, criada em 1995 pela Sun Microsystems (hoje parte da
+                Oracle).
+                Ela é orientada a objetos, o que significa que você trabalha com objetos que representam coisas do mundo
+                real,
+                com propriedades e comportamentos.
+            </p>
+        </div>
+
+    </section>
+
+    <script>
+        function mostrarDiv() {
+            const div = document.getElementById('aboutJava');
+            div.style.display = div.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function sair() {
+            window.location.href = "index.html"; // redireciona para a página inicial
+        }
+    </script>
+</body>
+
+</html>
